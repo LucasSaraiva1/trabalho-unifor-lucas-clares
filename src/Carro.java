@@ -22,14 +22,34 @@ public class Carro {
         }
     }
 
-    public void acelerar(int incremento) {
+    /*public void acelerar(int incremento) {
         if (ligado) {
             velocidade += incremento;
             System.out.println("Acelerando. Velocidade atual: " + velocidade + " km/h");
         } else {
             System.out.println("Não é possível acelerar, o carro está desligado.");
         }
+    }*/
+
+      //
+    
+        public void acelerar(int incremento) {
+            if (ligado) {
+                if (velocidade == 0) {
+                    velocidade += incremento;
+                    System.out.println("Acelerando. Velocidade Inicial: " + velocidade + " km/h");
+                } else {
+                    velocidade += incremento;
+                    System.out.println("Acelerando. Velocidade atual: " + velocidade + " km/h");
+                }
+            } else {
+                System.out.println("Não é possível acelerar, o carro está desligado.");
+            }
+        
+    
+        
     }
+    
 
     public double calcularConsumoGasolina(int velocidadeAtual, int marchaAtual) {
         // Suponha uma relação básica entre velocidade, potência e consumo de gasolina
