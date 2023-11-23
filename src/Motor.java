@@ -3,6 +3,7 @@ public class Motor {
 
     public Motor() {
         this.ligado = false;
+        System.out.println("");
     }
 
     public void ligarMotor() {
@@ -21,5 +22,8 @@ public class Motor {
         } else {
             System.out.println("O motor já está desligado.");
         }
+    }
+    public void chamarMetodoCarro(Carro carro) {
+        carro.acelerar(30); // Chamando o método acelerar da classe Carro
     }
 }

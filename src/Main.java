@@ -11,5 +11,6 @@ public class Main {
         motorCarro.desligarMotor();
         motorCarro.ligarMotor();
         
+        motorCarro.chamarMetodoCarro(meuCarro); // Chamando o método da classe Carro a partir da classe Motor
     }
 }
