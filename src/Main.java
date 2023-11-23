@@ -14,14 +14,16 @@ public class Main {
         // Supondo que a velocidade atual é 70 e a marcha atual é 3 (apenas para exemplo)
         int velocidadeAtual = 70;
         int marchaAtual = 3;
-
-        int potencia = motorCarro.potenciaMotor(velocidadeAtual, marchaAtual);
-        System.out.println("A potência do motor é: " + potencia + " unidades."); // Exibindo a potência calculada
         
         motorCarro.desligarMotor();
         motorCarro.ligarMotor();
         
         motorCarro.chamarMetodoCarro(meuCarro); // Chamando o método da classe Carro a partir da classe Motor
+
+        System.out.println("");
+        System.out.println("-- Criação de novo método na Classe Motor - Executado pelo Lucas criador da Classe Carro --");
+        int potencia = motorCarro.potenciaMotor(velocidadeAtual, marchaAtual);
+        System.out.println("A potência do motor é: " + potencia + " unidades."); // Exibindo a potência calculada
 
         System.out.println("");
         System.out.println("-- Criação de novo método na Classe Carro - Executado pela Clares criadora da Classe Motor --");
