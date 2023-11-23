@@ -26,4 +26,8 @@ public class Motor {
     public void chamarMetodoCarro(Carro carro) {
         carro.acelerar(30); // Chamando o método acelerar da classe Carro
     }
+
+    public int potenciaMotor(int velocidade, int marcha) {
+        return velocidade * marcha;
+    }
 }
