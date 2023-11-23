@@ -30,4 +30,14 @@ public class Carro {
             System.out.println("Não é possível acelerar, o carro está desligado.");
         }
     }
+
+    public double calcularConsumoGasolina(int velocidadeAtual, int marchaAtual) {
+        // Suponha uma relação básica entre velocidade, potência e consumo de gasolina
+        // Esta é uma lógica de exemplo, você pode ajustar conforme necessário
+        double potencia = motor.potenciaMotor(velocidadeAtual, marchaAtual);
+
+        // Suponha que o consumo é diretamente proporcional à potência e à velocidade
+        // Novamente, isso é apenas um exemplo, a lógica real pode ser mais complexa
+        return potencia * velocidadeAtual * 0.0001; // Fórmula de exemplo para consumo de gasolina
+    }
 }

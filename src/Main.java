@@ -5,7 +5,9 @@ public class Main {
         meuCarro.ligarCarro();
         meuCarro.acelerar(20);
         meuCarro.acelerar(50);
+        System.out.println("");
         
+        System.out.println("-- EXECUÇÃO DA CLASSE MOTOR.JAVA --");
         Motor motorCarro = new Motor();
         motorCarro.ligarMotor();
 
@@ -20,5 +22,10 @@ public class Main {
         motorCarro.ligarMotor();
         
         motorCarro.chamarMetodoCarro(meuCarro); // Chamando o método da classe Carro a partir da classe Motor
+
+        System.out.println("");
+        System.out.println("-- Criação de novo método na Classe Carro - Executado pela Clares criadora da Classe Motor --");
+        double consumoGasolina = meuCarro.calcularConsumoGasolina(velocidadeAtual, marchaAtual);
+        System.out.println("O consumo de gasolina é: " + consumoGasolina + " litros/h."); // Exibe o consumo de gasolina
     }
 }
